@@ -1,6 +1,7 @@
 # Output
 
 Wadapdoge is a simple chat server application that uses Express and Socket.io. 
+
 ![Alt text](image-4.png)
 ![Alt text](image-3.png)
 
@@ -97,9 +98,11 @@ CMD ["npm", "start"]
 Before starting, set up AWS credentials by using OpenID Connect (OIDC) authentication which are stored in the Github Actions Secrets. 
 
 Go to ROLE under IAM in AWS console and create a role. Save the ARN in github repository secret. 
+
 ![Alt text](image-5.png)
 
 Under the Trust Relationships tab, Add team members/collaborator's github account. Make sure to use wildcard /* behind repo's address.
+
 ![Alt text](image-6.png)
 
 The AWS credential code in workflow is as below,
